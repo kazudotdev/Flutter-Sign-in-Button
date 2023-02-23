@@ -61,9 +61,7 @@ class SignInButton extends StatelessWidget {
           elevation: elevation,
           key: const ValueKey('Google'),
           text: text ?? 'Sign in with Google',
-          textColor: button == Buttons.Google
-              ? const Color.fromRGBO(0, 0, 0, 0.54)
-              : const Color(0xFFFFFFFF),
+          textColor: button == Buttons.Google ? Colors.black : Colors.white,
           image: Container(
             margin: const EdgeInsets.fromLTRB(6.0, 0.0, 4.0, 0.0),
             child: ClipRRect(
